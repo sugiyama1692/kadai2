@@ -60,21 +60,19 @@
         <!--Result View Controller-->
         <scene sceneID="fS9-yE-f6i">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kbQ-yb-6DS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="A68-3r-0f6" userLabel="Exit" sceneMemberID="exit"/>
                 <viewController id="xLN-V7-ChX" customClass="ResultViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z8o-Aa-Kj1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="こんにちは" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJS-YG-gud">
-                                <rect key="frame" x="150" y="100" width="93" height="21"/>
+                                <rect key="frame" x="60" y="100" width="273" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPO-DA-Uya">
-                                <rect key="frame" x="165" y="151" width="63" height="34.333333333333343"/>
+                                <rect key="frame" x="165" y="221" width="63" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="back"/>
                                 <connections>
@@ -85,13 +83,14 @@
                         <viewLayoutGuide key="safeArea" id="b9p-iY-bNA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="yJS-YG-gud" firstAttribute="leading" secondItem="b9p-iY-bNA" secondAttribute="leading" constant="150" id="07c-1N-zMp"/>
-                            <constraint firstItem="b9p-iY-bNA" firstAttribute="trailing" secondItem="yJS-YG-gud" secondAttribute="trailing" constant="150" id="3Yt-gq-AK7"/>
+                            <constraint firstItem="yJS-YG-gud" firstAttribute="top" secondItem="b9p-iY-bNA" secondAttribute="top" constant="100" id="22v-bl-clI"/>
                             <constraint firstItem="dPO-DA-Uya" firstAttribute="leading" secondItem="b9p-iY-bNA" secondAttribute="leading" constant="165" id="5Kj-7U-eSB"/>
                             <constraint firstItem="yJS-YG-gud" firstAttribute="top" secondItem="b9p-iY-bNA" secondAttribute="top" constant="100" id="78V-4W-yoI"/>
+                            <constraint firstItem="yJS-YG-gud" firstAttribute="leading" secondItem="b9p-iY-bNA" secondAttribute="leading" constant="60" id="DBp-FN-Rny"/>
                             <constraint firstItem="b9p-iY-bNA" firstAttribute="trailing" secondItem="dPO-DA-Uya" secondAttribute="trailing" constant="165" id="Jt1-wq-mgD"/>
+                            <constraint firstItem="b9p-iY-bNA" firstAttribute="trailing" secondItem="yJS-YG-gud" secondAttribute="trailing" constant="60" id="MBn-4E-wp6"/>
+                            <constraint firstItem="dPO-DA-Uya" firstAttribute="top" secondItem="yJS-YG-gud" secondAttribute="bottom" constant="100" id="aFD-FJ-z1J"/>
                             <constraint firstItem="yJS-YG-gud" firstAttribute="top" secondItem="b9p-iY-bNA" secondAttribute="top" constant="100" id="kz5-H9-nvm"/>
-                            <constraint firstItem="dPO-DA-Uya" firstAttribute="top" secondItem="yJS-YG-gud" secondAttribute="bottom" constant="30" id="y2t-Hl-GyK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6ws-2I-YhG"/>
@@ -99,6 +98,8 @@
                         <outlet property="label" destination="yJS-YG-gud" id="fac-lV-5Z4"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kbQ-yb-6DS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="A68-3r-0f6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="821" y="-2606"/>
         </scene>
